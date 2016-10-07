@@ -6,13 +6,13 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-##Abstruct
-We will make comparisons regarding social equality in South Africa between the period of Apartheid and now based on data with respect to crime rates among race, level of education, and level of income. The objective of this research is to observe the effectiveness of policy change over time after Apartheid and to possibly suggest public policy to elevate South Africans' quality of life.
+## What is the research question
+Did Abolishment of Apartheid play a significant role in reducing social inequality in South Africa?
 
-##Hypothesis
-After the abolishment of Apartheid, indicators has been significantly changed.
+##Why this research is interesting
+because it is interesting
 
-##Methodlogy
+##How we prove the assumption
 1, Gathering data
   crimerate
   level of education
@@ -20,7 +20,12 @@ After the abolishment of Apartheid, indicators has been significantly changed.
 
 2, Compare the gaps of those indicators among races between the period of Apartheid and now.
 
-##Discussion
+##What data we used in this research
+1, Crimerate in South Africa
+  
+2, level of education
+3, level of income
+
 
 ##Conclusion
 Abolishing Apartheid was extremely effective to reduce social inequality!-I don't think so!!

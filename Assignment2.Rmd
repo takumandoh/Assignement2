@@ -15,8 +15,13 @@ because it is interesting
 ##How we prove the assumption
 1, Gathering data
   crimerate
+    crimerate of whites
+    crimerate of black
   level of education
+    level of education of white people
+    level of education of black people
   level of income
+    from wdi data
 
 2, Compare the gaps of those indicators among races between the period of Apartheid and now.
 

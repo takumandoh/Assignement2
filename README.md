@@ -10,4 +10,4 @@ We will make comparisons regarding social equality in South Africa between the p
 #Discussion
 
 #Conclusion
-Abolishing Apartheid was extremely effective to reduce social inequality!
+Abolishing Apartheid was extremely effective to reduce social inequality!-I don't think so!!

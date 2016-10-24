@@ -13,7 +13,8 @@ Did Abolishment of Apartheid play a significant role in reducing social inequali
 Why this research is interesting
 1, because this is interesting
 2, because data can be easily found
-3, because if this assumption can be proven, 
+3, because if this assumption can be proven, we can say that liberal policy can advance the QOL of whole nation
+4, 
 
 How we prove the assumption
 1, Gathering data
@@ -43,6 +44,7 @@ We use following data sources
 We try to use WDI packages. First, we investigate indicator names by using following code.
 ```{r}
 library(WDI)
+WDIsearch()
 WDIsearch('gdp.*capita.*constant')
 ```
 
@@ -50,8 +52,23 @@ WDIsearch('gdp.*capita.*constant')
 
 what is the country code of South Africa? see iso2c codes
 ```{r}
-dat = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
-head(dat)
+gdp = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
+trd = WDI(indicator='NE.TRD.GNFS.ZS', country=c('ZA'), start=1960, end=2012)
+
+```
+
+plot the gdp and trade
+```{r}
+library(ggplot2)
+ggplot(gdp, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() +  xlab('Year') + ylab('GDP per capita')
+ggplot(trd, aes(year, NE.TRD.GNFS.ZS, color=country)) + geom_line() +  xlab('Year') + ylab('Trade (% of gdp)')
+```
+
+calculate the trade amount
+```{r}
+realtrd = gdp * trd
+ggplot(realtrd)
+
 ```
 
 

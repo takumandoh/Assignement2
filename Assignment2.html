@@ -120,25 +120,323 @@ $(document).ready(function () {
 </div>
 
 
-<div id="what-is-the-research-question" class="section level2">
-<h2>What is the research question</h2>
-<p>Did Abolishment of Apartheid play a significant role in reducing social inequality in South Africa?</p>
+<div id="abstruct" class="section level2">
+<h2>Abstruct</h2>
+<p>???What is the research question Did Abolishment of Apartheid play a significant role in reducing social inequality in South Africa?</p>
+<p>???Why this research is interesting because it is interesting</p>
+<p>???How we prove the assumption 1, Gathering data crimerate crimerate of whites crimerate of black level of education level of education of white people level of education of black people level of income from wdi data</p>
+<p>2, Compare the gaps of those indicators among races between the period of Apartheid and now. ???What data we used in this research 1, Crimerate in South Africa 2, level of education 3, level of income</p>
+<p>???Conclusion Abolishing Apartheid was extremely effective to reduce social inequality!-I don’t think so!!</p>
 </div>
-<div id="why-this-research-is-interesting" class="section level2">
-<h2>Why this research is interesting</h2>
-<p>because it is interesting</p>
+<div id="data-gathering" class="section level2">
+<h2>data gathering</h2>
+<p>We use following data sources <a href="http://www.tradingeconomics.com/" class="uri">http://www.tradingeconomics.com/</a> <a href="http://data.worldbank.org/" class="uri">http://data.worldbank.org/</a></p>
+<p>We try to use WDI packages. First, we investigate indicator names by using following code.</p>
+<pre class="r"><code>library(WDI)</code></pre>
+<pre><code>## Loading required package: RJSONIO</code></pre>
+<pre class="r"><code>WDIsearch('gdp')</code></pre>
+<pre><code>##        indicator                       
+##   [1,] &quot;BG.GSR.NFSV.GD.ZS&quot;             
+##   [2,] &quot;BM.KLT.DINV.GD.ZS&quot;             
+##   [3,] &quot;BN.CAB.XOKA.GD.ZS&quot;             
+##   [4,] &quot;BN.CUR.GDPM.ZS&quot;                
+##   [5,] &quot;BN.GSR.FCTY.CD.ZS&quot;             
+##   [6,] &quot;BN.KLT.DINV.CD.ZS&quot;             
+##   [7,] &quot;BN.KLT.PRVT.GD.ZS&quot;             
+##   [8,] &quot;BN.TRF.CURR.CD.ZS&quot;             
+##   [9,] &quot;BNCABFUNDCD_&quot;                  
+##  [10,] &quot;BX.KLT.DINV.WD.GD.ZS&quot;          
+##  [11,] &quot;BX.TRF.MGR.DT.GD.ZS&quot;           
+##  [12,] &quot;BX.TRF.PWKR.DT.GD.ZS&quot;          
+##  [13,] &quot;BX.TRF.PWKR.GD.ZS&quot;             
+##  [14,] &quot;CM.MKT.LCAP.GD.ZS&quot;             
+##  [15,] &quot;CM.MKT.TRAD.GD.ZS&quot;             
+##  [16,] &quot;DT.DOD.ALLC.ZSG&quot;               
+##  [17,] &quot;DT.DOD.ALLN.ZSG&quot;               
+##  [18,] &quot;DT.DOD.DECT.CD.ZSG&quot;            
+##  [19,] &quot;DT.ODA.ALLD.GD.ZS&quot;             
+##  [20,] &quot;DT.ODA.DACD.ZSG&quot;               
+##  [21,] &quot;DT.ODA.MULT.ZSG&quot;               
+##  [22,] &quot;DT.ODA.NDAC.ZSG&quot;               
+##  [23,] &quot;DT.TDS.DECT.GD.ZS&quot;             
+##  [24,] &quot;EG.GDP.PUSE.KO.PP&quot;             
+##  [25,] &quot;EG.GDP.PUSE.KO.PP.KD&quot;          
+##  [26,] &quot;EG.USE.COMM.GD.PP.KD&quot;          
+##  [27,] &quot;EN.ATM.CO2E.KD.GD&quot;             
+##  [28,] &quot;EN.ATM.CO2E.PP.GD&quot;             
+##  [29,] &quot;EN.ATM.CO2E.PP.GD.KD&quot;          
+##  [30,] &quot;ER.GDP.FWTL.M3.KD&quot;             
+##  [31,] &quot;FI.RES.TOTL.CD.ZS&quot;             
+##  [32,] &quot;FM.AST.GOVT.CN.ZS&quot;             
+##  [33,] &quot;FM.LBL.BMNY.GD.ZS&quot;             
+##  [34,] &quot;FM.LBL.MQMY.GD.ZS&quot;             
+##  [35,] &quot;FS.AST.CGOV.GD.ZS&quot;             
+##  [36,] &quot;FS.AST.DOMO.GD.ZS&quot;             
+##  [37,] &quot;FS.AST.DOMS.GD.ZS&quot;             
+##  [38,] &quot;FS.AST.PRVT.GD.ZS&quot;             
+##  [39,] &quot;FS.LBL.LIQU.GD.ZS&quot;             
+##  [40,] &quot;FS.LBL.QLIQ.GD.ZS&quot;             
+##  [41,] &quot;GB.REV.XAGT.CN.ZS&quot;             
+##  [42,] &quot;GB.XPD.RSDV.GD.ZS&quot;             
+##  [43,] &quot;GC.BAL.CASH.GD.ZS&quot;             
+##  [44,] &quot;GC.DOD.TOTL.GD.ZS&quot;             
+##  [45,] &quot;GC.FIN.DOMS.GD.ZS&quot;             
+##  [46,] &quot;GC.FIN.FRGN.GD.ZS&quot;             
+##  [47,] &quot;GC.REV.XGRT.GD.ZS&quot;             
+##  [48,] &quot;GC.TAX.TOTL.GD.ZS&quot;             
+##  [49,] &quot;GC.XPN.TOTL.GD.ZS&quot;             
+##  [50,] &quot;GDPPCKD&quot;                       
+##  [51,] &quot;GDPPCKN&quot;                       
+##  [52,] &quot;GGBALOVRLCD_&quot;                  
+##  [53,] &quot;IE.ICT.TOTL.GD.ZS&quot;             
+##  [54,] &quot;MS.MIL.XPND.GD.ZS&quot;             
+##  [55,] &quot;NE.CON.GOVT.ZS&quot;                
+##  [56,] &quot;NE.CON.PETC.ZS&quot;                
+##  [57,] &quot;NE.CON.TETC.ZS&quot;                
+##  [58,] &quot;NE.DAB.TOTL.ZS&quot;                
+##  [59,] &quot;NE.EXP.GNFS.ZS&quot;                
+##  [60,] &quot;NE.GDI.FPRV.ZS&quot;                
+##  [61,] &quot;NE.GDI.FPUB.ZS&quot;                
+##  [62,] &quot;NE.GDI.FTOT.ZS&quot;                
+##  [63,] &quot;NE.GDI.TOTL.ZS&quot;                
+##  [64,] &quot;NE.IMP.GNFS.ZS&quot;                
+##  [65,] &quot;NE.MRCH.GDP.ZS&quot;                
+##  [66,] &quot;NE.RSB.GNFS.ZS&quot;                
+##  [67,] &quot;NE.TRD.GNFS.ZS&quot;                
+##  [68,] &quot;NV.AGR.PCAP.KD.ZG&quot;             
+##  [69,] &quot;NV.AGR.TOTL.ZG&quot;                
+##  [70,] &quot;NV.AGR.TOTL.ZS&quot;                
+##  [71,] &quot;NV.IND.MANF.ZS&quot;                
+##  [72,] &quot;NV.IND.TOTL.ZS&quot;                
+##  [73,] &quot;NV.SRV.TETC.ZS&quot;                
+##  [74,] &quot;NY.AGR.SUBS.GD.ZS&quot;             
+##  [75,] &quot;NY.GDP.COAL.RT.ZS&quot;             
+##  [76,] &quot;NY.GDP.DEFL.KD.ZG&quot;             
+##  [77,] &quot;NY.GDP.DEFL.ZS&quot;                
+##  [78,] &quot;NY.GDP.DISC.CN&quot;                
+##  [79,] &quot;NY.GDP.DISC.KN&quot;                
+##  [80,] &quot;NY.GDP.FRST.RT.ZS&quot;             
+##  [81,] &quot;NY.GDP.MINR.RT.ZS&quot;             
+##  [82,] &quot;NY.GDP.MKTP.CD&quot;                
+##  [83,] &quot;NY.GDP.MKTP.CD.XD&quot;             
+##  [84,] &quot;NY.GDP.MKTP.CN&quot;                
+##  [85,] &quot;NY.GDP.MKTP.CN.XD&quot;             
+##  [86,] &quot;NY.GDP.MKTP.KD&quot;                
+##  [87,] &quot;NY.GDP.MKTP.KD.ZG&quot;             
+##  [88,] &quot;NY.GDP.MKTP.KN&quot;                
+##  [89,] &quot;NY.GDP.MKTP.PP.CD&quot;             
+##  [90,] &quot;NY.GDP.MKTP.PP.KD&quot;             
+##  [91,] &quot;NY.GDP.MKTP.XU.E&quot;              
+##  [92,] &quot;NY.GDP.NGAS.RT.ZS&quot;             
+##  [93,] &quot;NY.GDP.PCAP.CD&quot;                
+##  [94,] &quot;NY.GDP.PCAP.KD&quot;                
+##  [95,] &quot;NY.GDP.PCAP.KD.ZG&quot;             
+##  [96,] &quot;NY.GDP.PCAP.KN&quot;                
+##  [97,] &quot;NY.GDP.PCAP.PP.CD&quot;             
+##  [98,] &quot;NY.GDP.PCAP.PP.KD&quot;             
+##  [99,] &quot;NY.GDP.PCAP.PP.KD.ZG&quot;          
+## [100,] &quot;NY.GDP.PETR.RT.ZS&quot;             
+## [101,] &quot;NY.GDP.TOTL.RT.ZS&quot;             
+## [102,] &quot;NY.GDS.TOTL.ZS&quot;                
+## [103,] &quot;NY.GNS.ICTR.ZS&quot;                
+## [104,] &quot;NYGDPDISCCD&quot;                   
+## [105,] &quot;NYGDPDISCCN&quot;                   
+## [106,] &quot;NYGDPDISCKD&quot;                   
+## [107,] &quot;NYGDPDISCKN&quot;                   
+## [108,] &quot;NYGDPDISCXN&quot;                   
+## [109,] &quot;NYGDPMKTPCD&quot;                   
+## [110,] &quot;NYGDPMKTPCN&quot;                   
+## [111,] &quot;NYGDPMKTPCP&quot;                   
+## [112,] &quot;NYGDPMKTPKD&quot;                   
+## [113,] &quot;NYGDPMKTPKN&quot;                   
+## [114,] &quot;NYGDPMKTPKP&quot;                   
+## [115,] &quot;NYGDPMKTPXD&quot;                   
+## [116,] &quot;NYGDPMKTPXN&quot;                   
+## [117,] &quot;NYGDPMKTPXP&quot;                   
+## [118,] &quot;NYGDPPOTLKD&quot;                   
+## [119,] &quot;NYGDPPOTLKN&quot;                   
+## [120,] &quot;PA.NUS.PPP&quot;                    
+## [121,] &quot;PA.NUS.PPPC.RF&quot;                
+## [122,] &quot;SE.XPD.PRIM.PC.ZS&quot;             
+## [123,] &quot;SE.XPD.SECO.PC.ZS&quot;             
+## [124,] &quot;SE.XPD.TERT.PC.ZS&quot;             
+## [125,] &quot;SE.XPD.TOTL.GD.ZS&quot;             
+## [126,] &quot;SE.XPD.TOTL.PC.ZS&quot;             
+## [127,] &quot;SH.XPD.PRIV.ZS&quot;                
+## [128,] &quot;SH.XPD.PUBL.ZS&quot;                
+## [129,] &quot;SH.XPD.TOTL.ZS&quot;                
+## [130,] &quot;SL.GDP.PCAP.EM.KD&quot;             
+## [131,] &quot;SL.GDP.PCAP.EM.KD.ZG&quot;          
+## [132,] &quot;TG.VAL.TOTL.GD.ZS&quot;             
+## [133,] &quot;UIS.XGDP.0.FDINSTADM.FFD&quot;      
+## [134,] &quot;UIS.XGDP.0.FSGOV.FDINSTADM.FFD&quot;
+## [135,] &quot;UIS.XGDP.0.FSpr.FDinst.FFd&quot;    
+## [136,] &quot;UIS.XGDP.1.FDINSTADM.FFD&quot;      
+## [137,] &quot;UIS.XGDP.1.FSGOV.FDINSTADM.FFD&quot;
+## [138,] &quot;UIS.XGDP.1.FSpr.FDinst.FFd&quot;    
+## [139,] &quot;UIS.XGDP.234.FDINSTADM.FFD&quot;    
+## [140,] &quot;UIS.XGDP.234.FSpr.FDinst.FFd&quot;  
+## [141,] &quot;UIS.XGDP.56.FDINSTADM.FFD&quot;     
+## [142,] &quot;UIS.XGDP.56.FSpr.FDinst.FFd&quot;   
+## [143,] &quot;UIS.XGDP.FDINSTADM.FFD&quot;        
+## [144,] &quot;UIS.XGDP.FSGOV.FDINSTADM.FFD&quot;  
+## [145,] &quot;UIS.XGDP.FSint.FDinst.FFd&quot;     
+## [146,] &quot;UIS.XGDP.FSpr.FDinst.FFd&quot;      
+## [147,] &quot;XGDP.234.FSGOV.FDINSTADM.FFD&quot;  
+## [148,] &quot;XGDP.56.FSGOV.FDINSTADM.FFD&quot;   
+##        name                                                                                                                                        
+##   [1,] &quot;Trade in services (% of GDP)&quot;                                                                                                              
+##   [2,] &quot;Foreign direct investment, net outflows (% of GDP)&quot;                                                                                        
+##   [3,] &quot;Current account balance (% of GDP)&quot;                                                                                                        
+##   [4,] &quot;Current account balance excluding net official capital grants (% of GDP)&quot;                                                                  
+##   [5,] &quot;Net income (% of GDP)&quot;                                                                                                                     
+##   [6,] &quot;Foreign direct investment (% of GDP)&quot;                                                                                                      
+##   [7,] &quot;Private capital flows, total (% of GDP)&quot;                                                                                                   
+##   [8,] &quot;Net current transfers (% of GDP)&quot;                                                                                                          
+##   [9,] &quot;Current Account Balance, %GDP&quot;                                                                                                             
+##  [10,] &quot;Foreign direct investment, net inflows (% of GDP)&quot;                                                                                         
+##  [11,] &quot;Migrant remittance inflows (% of GDP)&quot;                                                                                                     
+##  [12,] &quot;Workers' remittances and compensation of employees, received (% of GDP)&quot;                                                                   
+##  [13,] &quot;Workers' remittances, receipts (% of GDP)&quot;                                                                                                 
+##  [14,] &quot;Market capitalization of listed companies (% of GDP)&quot;                                                                                      
+##  [15,] &quot;Stocks traded, total value (% of GDP)&quot;                                                                                                     
+##  [16,] &quot;Debt on Concessional terms to GDP (% of GDP)&quot;                                                                                              
+##  [17,] &quot;Debt on Non-concessional terms to GDP (% of GDP)&quot;                                                                                          
+##  [18,] &quot;Debt outstanding and disbursed, Total to GDP (% of GDP)&quot;                                                                                   
+##  [19,] &quot;Net ODA received (% of GDP)&quot;                                                                                                               
+##  [20,] &quot;Net ODA received from DAC donors (% of recipient's GDP)&quot;                                                                                   
+##  [21,] &quot;Net ODA received from multilateral donors (% of GDP)&quot;                                                                                      
+##  [22,] &quot;Net ODA received from non-DAC bilateral donors (% of GDP)&quot;                                                                                 
+##  [23,] &quot;Total debt service (% of GDP)&quot;                                                                                                             
+##  [24,] &quot;GDP per unit of energy use (PPP $ per kg of oil equivalent)&quot;                                                                               
+##  [25,] &quot;GDP per unit of energy use (constant 2005 PPP $ per kg of oil equivalent)&quot;                                                                 
+##  [26,] &quot;Energy use (kg of oil equivalent) per $1,000 GDP (constant 2005 PPP)&quot;                                                                      
+##  [27,] &quot;CO2 emissions (kg per 2000 US$ of GDP)&quot;                                                                                                    
+##  [28,] &quot;CO2 emissions (kg per PPP $ of GDP)&quot;                                                                                                       
+##  [29,] &quot;CO2 emissions (kg per 2005 PPP $ of GDP)&quot;                                                                                                  
+##  [30,] &quot;Water productivity, total (constant 2000 US$ GDP per cubic meter of total freshwater withdrawal)&quot;                                          
+##  [31,] &quot;Total reserves includes gold (% of GDP)&quot;                                                                                                   
+##  [32,] &quot;Claims on governments and other public entities (% of GDP)&quot;                                                                                
+##  [33,] &quot;Broad money (% of GDP)&quot;                                                                                                                    
+##  [34,] &quot;Money and quasi money (M2) as % of GDP&quot;                                                                                                    
+##  [35,] &quot;Claims on central government, etc. (% GDP)&quot;                                                                                                
+##  [36,] &quot;Claims on other sectors of the domestic economy (% of GDP)&quot;                                                                                
+##  [37,] &quot;Domestic credit provided by banking sector (% of GDP)&quot;                                                                                     
+##  [38,] &quot;Domestic credit to private sector (% of GDP)&quot;                                                                                              
+##  [39,] &quot;Liquid liabilities (M3) as % of GDP&quot;                                                                                                       
+##  [40,] &quot;Quasi-liquid liabilities (% of GDP)&quot;                                                                                                       
+##  [41,] &quot;Central government revenues, excluding all grants (% of GDP)&quot;                                                                              
+##  [42,] &quot;Research and development expenditure (% of GDP)&quot;                                                                                           
+##  [43,] &quot;Cash surplus/deficit (% of GDP)&quot;                                                                                                           
+##  [44,] &quot;Central government debt, total (% of GDP)&quot;                                                                                                 
+##  [45,] &quot;Net incurrence of liabilities, domestic (% of GDP)&quot;                                                                                        
+##  [46,] &quot;Net incurrence of liabilities, foreign (% of GDP)&quot;                                                                                         
+##  [47,] &quot;Revenue, excluding grants (% of GDP)&quot;                                                                                                      
+##  [48,] &quot;Tax revenue (% of GDP)&quot;                                                                                                                    
+##  [49,] &quot;Expense (% of GDP)&quot;                                                                                                                        
+##  [50,] &quot;GDP per Capita, constant US$, millions&quot;                                                                                                    
+##  [51,] &quot;Real GDP per Capita (real local currency units, various base years)&quot;                                                                       
+##  [52,] &quot;General Govt. Balance, %GDP&quot;                                                                                                               
+##  [53,] &quot;Information and communication technology expenditure (% of GDP)&quot;                                                                           
+##  [54,] &quot;Military expenditure (% of GDP)&quot;                                                                                                           
+##  [55,] &quot;General government final consumption expenditure (% of GDP)&quot;                                                                               
+##  [56,] &quot;Household final consumption expenditure, etc. (% of GDP)&quot;                                                                                  
+##  [57,] &quot;Final consumption expenditure, etc. (% of GDP)&quot;                                                                                            
+##  [58,] &quot;Gross national expenditure (% of GDP)&quot;                                                                                                     
+##  [59,] &quot;Exports of goods and services (% of GDP)&quot;                                                                                                  
+##  [60,] &quot;Gross fixed capital formation, private sector (% of GDP)&quot;                                                                                  
+##  [61,] &quot;Gross public investment (% of GDP)&quot;                                                                                                        
+##  [62,] &quot;Gross fixed capital formation (% of GDP)&quot;                                                                                                  
+##  [63,] &quot;Gross capital formation (% of GDP)&quot;                                                                                                        
+##  [64,] &quot;Imports of goods and services (% of GDP)&quot;                                                                                                  
+##  [65,] &quot;Merchandise trade to GDP ratio (%)&quot;                                                                                                        
+##  [66,] &quot;External balance on goods and services (% of GDP)&quot;                                                                                         
+##  [67,] &quot;Trade (% of GDP)&quot;                                                                                                                          
+##  [68,] &quot;Real agricultural GDP per capita growth rate (%)&quot;                                                                                          
+##  [69,] &quot;Real agricultural GDP growth rates (%)&quot;                                                                                                    
+##  [70,] &quot;Agriculture, value added (% of GDP)&quot;                                                                                                       
+##  [71,] &quot;Manufacturing, value added (% of GDP)&quot;                                                                                                     
+##  [72,] &quot;Industry, value added (% of GDP)&quot;                                                                                                          
+##  [73,] &quot;Services, etc., value added (% of GDP)&quot;                                                                                                    
+##  [74,] &quot;Agricultural support estimate (% of GDP)&quot;                                                                                                  
+##  [75,] &quot;Coal rents (% of GDP)&quot;                                                                                                                     
+##  [76,] &quot;Inflation, GDP deflator (annual %)&quot;                                                                                                        
+##  [77,] &quot;GDP deflator (base year varies by country)&quot;                                                                                                
+##  [78,] &quot;Discrepancy in expenditure estimate of GDP (current LCU)&quot;                                                                                  
+##  [79,] &quot;Discrepancy in expenditure estimate of GDP (constant LCU)&quot;                                                                                 
+##  [80,] &quot;Forest rents (% of GDP)&quot;                                                                                                                   
+##  [81,] &quot;Mineral rents (% of GDP)&quot;                                                                                                                  
+##  [82,] &quot;GDP (current US$)&quot;                                                                                                                         
+##  [83,] &quot;GDP deflator, index (2000=100; US$ series)&quot;                                                                                                
+##  [84,] &quot;GDP (current LCU)&quot;                                                                                                                         
+##  [85,] &quot;GDP deflator, period average (LCU index 2000=100)&quot;                                                                                         
+##  [86,] &quot;GDP (constant 2000 US$)&quot;                                                                                                                   
+##  [87,] &quot;GDP growth (annual %)&quot;                                                                                                                     
+##  [88,] &quot;GDP (constant LCU)&quot;                                                                                                                        
+##  [89,] &quot;GDP, PPP (current international $)&quot;                                                                                                        
+##  [90,] &quot;GDP, PPP (constant 2005 international $)&quot;                                                                                                  
+##  [91,] &quot;GDP deflator, end period (base year varies by country)&quot;                                                                                    
+##  [92,] &quot;Natural gas rents (% of GDP)&quot;                                                                                                              
+##  [93,] &quot;GDP per capita (current US$)&quot;                                                                                                              
+##  [94,] &quot;GDP per capita (constant 2000 US$)&quot;                                                                                                        
+##  [95,] &quot;GDP per capita growth (annual %)&quot;                                                                                                          
+##  [96,] &quot;GDP per capita (constant LCU)&quot;                                                                                                             
+##  [97,] &quot;GDP per capita, PPP (current international $)&quot;                                                                                             
+##  [98,] &quot;GDP per capita, PPP (constant 2005 international $)&quot;                                                                                       
+##  [99,] &quot;GDP per capita, PPP annual growth (%)&quot;                                                                                                     
+## [100,] &quot;Oil rents (% of GDP)&quot;                                                                                                                      
+## [101,] &quot;Total natural resources rents (% of GDP)&quot;                                                                                                  
+## [102,] &quot;Gross domestic savings (% of GDP)&quot;                                                                                                         
+## [103,] &quot;Gross savings (% of GDP)&quot;                                                                                                                  
+## [104,] &quot;GDP Discrepancy, current US$, millions&quot;                                                                                                    
+## [105,] &quot;GDP Discrepancy, current LCU, millions&quot;                                                                                                    
+## [106,] &quot;GDP Discrepancy, constant US$, millions&quot;                                                                                                   
+## [107,] &quot;GDP Discrepancy, constant LCU, millions&quot;                                                                                                   
+## [108,] &quot;GDP Discrepancy deflator, LCU&quot;                                                                                                             
+## [109,] &quot;GDP, current US$, millions&quot;                                                                                                                
+## [110,] &quot;GDP, current LCU, millions&quot;                                                                                                                
+## [111,] &quot;GDP, PPP basis, current intl $, millions&quot;                                                                                                  
+## [112,] &quot;GDP, constant US$, millions&quot;                                                                                                               
+## [113,] &quot;GDP, constant LCU, millions&quot;                                                                                                               
+## [114,] &quot;GDP, PPP basis, constant intl $, millions&quot;                                                                                                 
+## [115,] &quot;GDP (implicit price deflator contant 2005 USD)&quot;                                                                                            
+## [116,] &quot;GDP deflator, LCU&quot;                                                                                                                         
+## [117,] &quot;GDP, PPP basis, deflator&quot;                                                                                                                  
+## [118,] &quot;GDP Potential, constant US$, millions&quot;                                                                                                     
+## [119,] &quot;Estimated Potential GDP (real local currency units, various base years)&quot;                                                                   
+## [120,] &quot;PPP conversion factor, GDP (LCU per international $)&quot;                                                                                      
+## [121,] &quot;PPP conversion factor (GDP) to market exchange rate ratio&quot;                                                                                 
+## [122,] &quot;Expenditure per student, primary (% of GDP per capita)&quot;                                                                                    
+## [123,] &quot;Expenditure per student, secondary (% of GDP per capita)&quot;                                                                                  
+## [124,] &quot;Expenditure per student, tertiary (% of GDP per capita)&quot;                                                                                   
+## [125,] &quot;Public spending on education, total (% of GDP)&quot;                                                                                            
+## [126,] &quot;Public education expenditure per student (% of p.c. GDP), all levels&quot;                                                                      
+## [127,] &quot;Health expenditure, private (% of GDP)&quot;                                                                                                    
+## [128,] &quot;Health expenditure, public (% of GDP)&quot;                                                                                                     
+## [129,] &quot;Health expenditure, total (% of GDP)&quot;                                                                                                      
+## [130,] &quot;GDP per person employed (constant 1990 PPP $)&quot;                                                                                             
+## [131,] &quot;GDP per person employed (annual % growth)&quot;                                                                                                 
+## [132,] &quot;Merchandise trade (% of GDP)&quot;                                                                                                              
+## [133,] &quot;Total expenditure on educational institutions and administration as a % of GDP. All sources. Pre-primary&quot;                                  
+## [134,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Public sources. Pre-primary&quot;                               
+## [135,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Private sources. Pre-primary&quot;                              
+## [136,] &quot;Total expenditure on educational institutions and administration as a % of GDP. All sources. Primary&quot;                                      
+## [137,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Public sources. Primary&quot;                                   
+## [138,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Private sources. Primary&quot;                                  
+## [139,] &quot;Total expenditure on educational institutions and administration as a % of GDP. All sources. Secondary and post-secondary non-tertiary&quot;    
+## [140,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Private sources. Secondary and post-secondary non-tertiary&quot;
+## [141,] &quot;Total expenditure on educational institutions and administration as a % of GDP. All sources. Tertiary&quot;                                     
+## [142,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Private sources. Tertiary&quot;                                 
+## [143,] &quot;Total expenditure on educational institutions and administration as a % of GDP. All sources. All levels&quot;                                   
+## [144,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Public sources. All levels&quot;                                
+## [145,] &quot;Total expenditure on educational institutions and administration as a % of GDP. International sources. All levels&quot;                         
+## [146,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Private sources. All levels&quot;                               
+## [147,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Public sources. Secondary and post-secondary non-tertiary&quot; 
+## [148,] &quot;Total expenditure on educational institutions and administration as a % of GDP. Public sources. Tertiary&quot;</code></pre>
+<p>We compare various indicator before and after 1994, the year Apartheid officially abolished.</p>
 </div>
-<div id="how-we-prove-the-assumption" class="section level2">
-<h2>How we prove the assumption</h2>
-<p>1, Gathering data crimerate level of education level of income</p>
-<p>2, Compare the gaps of those indicators among races between the period of Apartheid and now.</p>
-</div>
-<div id="section" class="section level2">
-<h2></h2>
-</div>
-<div id="conclusion" class="section level2">
-<h2>Conclusion</h2>
-<p>Abolishing Apartheid was extremely effective to reduce social inequality!-I don’t think so!!</p>
+<div id="gdp-per-capita" class="section level2">
+<h2>GDP per capita</h2>
 </div>
 
 

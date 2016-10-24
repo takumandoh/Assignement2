@@ -7,13 +7,15 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 ## Abstruct
-???What is the research question
+What is the research question
 Did Abolishment of Apartheid play a significant role in reducing social inequality in South Africa?
 
-???Why this research is interesting
-because it is interesting
+Why this research is interesting
+1, because this is interesting
+2, because data can be easily found
+3, because if this assumption can be proven, 
 
-???How we prove the assumption
+How we prove the assumption
 1, Gathering data
   crimerate
     crimerate of whites
@@ -23,14 +25,14 @@ because it is interesting
     level of education of black people
   level of income
     from wdi data
-
 2, Compare the gaps of those indicators among races between the period of Apartheid and now.
-???What data we used in this research
+
+What data we used in this research
 1, Crimerate in South Africa
 2, level of education
 3, level of income
 
-???Conclusion
+Conclusion
 Abolishing Apartheid was extremely effective to reduce social inequality!-I don't think so!!
 
 ##data gathering
@@ -41,17 +43,18 @@ We use following data sources
 We try to use WDI packages. First, we investigate indicator names by using following code.
 ```{r}
 library(WDI)
-WDIsearch('gdp')
+WDIsearch('gdp.*capita.*constant')
+```
+
+
+
+what is the country code of South Africa? see iso2c codes
+```{r}
+dat = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
+head(dat)
 ```
 
 
 We compare various indicator before and after 1994, the year Apartheid officially abolished.
-
-## GDP per capita
-```{r}
-
-
-```
-
 
 

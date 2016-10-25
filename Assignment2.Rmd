@@ -6,15 +6,13 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-## Abstruct
-What is the research question
-Did Abolishment of Apartheid play a significant role in reducing social inequality in South Africa?
+## Research Question 
+Our Research Question:
+Twenty Years since the end of Apartheid: Did the collapse of Apartheid play a significant role in reducing racial and social inequality in South Africa? Is post-apartheid South Africa better off or worse off than during the aparthed era? 
 
-Why this research is interesting
-1, because this is interesting
-2, because data can be easily found
-3, because if this assumption can be proven, we can say that liberal policy can advance the QOL of whole nation
-4, 
+Why is this research  interesting:
+After the collapse of the apartheid, South Africa held its very first historic democratic election in 1994 and announced to the world a new begnning of the country. By electing Nelson Mandel as the president of South Africa, people of all races in the country hoped to see democratic policies which would alleviate poverty and social inequality. Now that over 20 years have passed, the country has been asked for its transition whether or not Mandela's demoratic vision has been fulfilled, especially in terms of non-racial, equal, and progessive political economic development. Our research, therefore, aims to analyze the country's performance in meeting the targets and develivering policies by making comparisons of various social features before and after the Apartheid. This research will be interesting since not only we deal with unique country, South Africa, where experienced very controversial history of racial segregation and white supremach, but also we can evaluate its democratic development and expectation based on several social indicators.     
+
 
 How we prove the assumption
 1, Gathering data

@@ -1,6 +1,7 @@
 ---
 title: "Assignment2"
 output: html_document
+bibliography: bibliography.bib
 ---
 
 ```{r setup, include=FALSE}
@@ -71,5 +72,4 @@ ggplot(realtrd)
 
 
 We compare various indicator before and after 1994, the year Apartheid officially abolished.
-
 

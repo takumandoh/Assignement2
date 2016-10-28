@@ -27,9 +27,9 @@ gdp = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
 ggplot(gdp, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() +  xlab('Year') + ylab('GDP per capita')
 ```
 
-After the end of Apartheid, the unemploymentrate has been stagnated.
+After the end of Apartheid, the unemploymentrate has been stagnated.@apartheidsucks
 
-After the end of Apartheid, the life expectancy has been fallen.
+After the end of Apartheid, the life expectancy has been fallen.@apartheidsucks
 
 
 ##Methodlogy
@@ -39,3 +39,5 @@ In order to answer the question, we compared various economic and social indicat
 We will use following data sources.
   1, WorldBank
   2, 
+  
+# References

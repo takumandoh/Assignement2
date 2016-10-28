@@ -36,6 +36,11 @@ This research is interesting because not only we deal with unique country, South
 3.	Income and Non-income Inequality in Post-Apartheid South Africa: What are the Drivers and Possible Policy Interventions? - Development Policy Research Unit, August 2009 http://www.cde.org.za/wp-content/uploads/2013/02/The%20Next%20Decade.pdf#page=95
 
  --> Overview: This literature of study identifies the drivers of the reproduction of inequality in post-apartheid South Africa and examines possible policy choices in order to mitigate the impact of increased inequality. This paper argues, based on the analysis of data of Income and Expenditure surveys conducted in 1995, 2000, and 2005, that there had a continuous increase in inequality, strongly indicating that South African is now the one of the most consistently unequal economy in the world. We can use this literature to support our later argument that wage inequality among races can be the main contributor to the growing income inequality. 
+ 
+ 4.	Poverty and Well-being in Post-Apartheid South Africa: An Overview of Data, Outcomes and Policy - Development Policy Research Unit (2005) https://papers.ssrn.com/sol3/papers.cfm?abstract_id=982805
+ 
+--> Overview: This study provides an overview of poverty and well-being of South African during the first decade of post-apartheid. Focusing on the poverty and policy availability for future, this analysis paper argues that the first ten years after the end of Apartheid has rather displayed increase in income inequality and unemployment rates. The study also stated that the analysis observed the declining share of rural poverty due to increased migration and urbanization. 
+
 
 
 After the end of Apartheid, the gdp per capita has been improved.

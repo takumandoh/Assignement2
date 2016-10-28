@@ -8,16 +8,15 @@ bibliography: bibliography.bib
 knitr::opts_chunk$set(echo = TRUE)
 library(WDI)
 library(ggplot2)
-
 ```
+
 ## Research Question
-Twenty Years since the end of Apartheid: Did the collapse of Apartheid play a significant role in reducing racial and social inequality in South Africa? Is post-apartheid South Africa better off or worse off than during the apartheid era? 
+  Twenty Years since the end of Apartheid: Did the collapse of Apartheid play a significant role in reducing racial and social inequality in South Africa? Is post-apartheid South Africa better off or worse off than during the apartheid era? 
 
 ## Hypothesis
-Since the end of apartheid and begnning of democracy in South Africa, socio-economic problems associated with white-supremacy, such as racial imbalance in income distribution, educational dispartiy, unemployment rate, and crime rate, has been improving, leading to successful transition and development of the country,   
+  Since the end of apartheid and begnning of democracy in South Africa, socio-economic problems associated with white-supremacy, such as racial imbalance in income distribution, educational dispartiy, unemployment rate, and crime rate, has been improving, leading to successful transition and development of the country.
 
 ## Justification for the research 
-
   After the collapse of the apartheid, South Africa held its very first historic democratic election in 1994 and announced to the world a new beginning of the country. By electing Nelson Mandel as the president of South Africa, people of all races in the country hoped to see democratic policies which would alleviate poverty and social inequality. Now that over 20 years have passed, the country has been asked for its transition whether or not Mandela's democratic vision has been fulfilled, especially in terms of non-racial, equal, and progressive political economic development. Our research, therefore, aims to analyze the country's performance in meeting the targets and delivering policies by making comparisons of various social features before and after the apartheid. 
 This research is interesting because not only we deal with unique country, South Africa, where experienced very controversial history of racial segregation and white supremacy, but also we evaluate its democratic development and expectation based on several social indicators.
 
@@ -26,10 +25,9 @@ This research is interesting because not only we deal with unique country, South
   Secondly, we believe that it is worth researching about the apartheid, analyzing its legacy, and any changes in post-apartheid, in terms of the historical and social context, since the policy itself was very controversial and unjust. Even before the official apartheid began, racial segregation and white supremacy was a central aspects of South African policy because of the 1913 Land Act, which forced black Africans to live in reserves. In 1948, South Africa's all-white government began enforcing policies of racial segregation with the system of apartheid. Under the rule of apartheid, nonwhite South Africans not only were forced to live in segregated neighborhoods from whites but also had to use separate restaurants, and other public facilities. Being at the very bottom of the social strata, black people were taken away of their citizenships, separated from public education, medical care, and all other public services. Moreover, they found jobs on white-owned mines, farms, or as servants for white households while being treated as inferiors. As a result, Apartheid sparked several significant internal resistance, uprisings, and protests organized by different kinds of sectors of local societies. One of the most popular internal resistance took place in 1976 in Soweto, a black township outside Johannesburg, when thousands of black children demonstrated against the Afrikaans language requirement for black African students. Since this uprising, South Africa's brutal apartheid policy drew more and more international attention to the country, and finally, the United Nations stepped up in the 1980s to end apartheid by utilizing economic sanctions and placing trading embargos against South African products. By the early 1990s, both internal and external efforts began to be effective as a series of negotiations started to dismantle apartheid. As both President of the Youth League and deputy ANC (African National Congress) President, Nelson Mandela was the one who intensified the grassroots resistance efforts despite of his multiple imprisonments. Apartheid officially ended in 1994 and Nelson Mandela became the first black and freely elected president of South Africa. During his presidency, Mandela established majority rule, guaranteed minority rights and freedom of expression, and devoted to improve employment, housing and basic public services including health care. However, as abovementioned already, the great expectation since Nelson Mandela, according to several researches, has been in crisis due to the failure of policy implementation and governance corruption over the last 20 years. As studying historical and social aspects of South Africa with respect to their brutal and immoral apartheid policy for decades, we would like to analyze and verify whether the South African income distribution and general human development have improved in terms of alleviating poverty and inequality.This research is not only interesting but also meaningful since it embeds our sincere hope to see the successful transition of newly democratized country, South Africa, from the society with racism and white-supremacy to one with more equal and sustainable livelihoods for all.   
 
 #Literature Review 
-
 1.How South Africa has changed since Nelson Mandela's release - the Guardian https://www.theguardian.com/world/datablog/2013/dec/06/how-south-africa-changed-since-nelson-mandelas-release-prison-1990
 
- --> Overview: This is a Datablog article from The Guardian, which provides graphs related to Economic growth, Trade, Migration, Life expectancy, and Living conditions in South Africa over the last decades. The article also allows readers to directly access to the data so that readers can see the figures and share their views. According to the data provided by the article, GDP per capita has risen since the year of 1990, spending on healthcare has steadily improved from 2.9% in 1995 to 3.4% in 2005, and living conditions in terms of sanitation facilities has made improvements over the last decade. 
+ --> Overview: This is a Datablog article from The Guardian, which provides graphs related to Economic growth, Trade, Migration, Life expectancy, and Living conditions in South Africa over the last decades. The article also allows readers to directly access to the data so that readers can see the figures and share their views. According to the data provided by the article, GDP per capita has risen since the year of 1990, spending on healthcare has steadily improved from 2.9% in 1995 to 3.4% in 2005, and living conditions in terms of sanitation facilities has made improvements over the last decade. @WB @SASA
 
 2.One Kind of Freedom: Poverty Dynamics in Post-Apartheid South Africa- World Development Volume 29, Issue 12, December 2001, Pages 1987-2006 http://www.sciencedirect.com/science/article/pii/S0305750X01000894#
 
@@ -50,18 +48,27 @@ After the end of Apartheid, the unemploymentrate has been stagnated.(see @Last1)
 
 After the end of Apartheid, the life expectancy has been fallen.(see @Last1)
 
+## Research Methodologies
+In order to answer the questions posed based on our hypothesis, we are going to compare various socio-economic indicators before and after 1994, the year Apartheid officially abolished.
+
+We will investigate following indicators after the abolishment of apartheid.
+
+  1, racial imbalance in income distribution
+  
+  2, educational disparty
+  
+  3, crime rate
 
 ## Identify Data sources
 We will use following data sources to conduct our research
 
   1, WorldBank
+
   2, United Nations Development Programme
+
   3, Statistics South Africa
+
   4, US Census Bureau
 
 
-## Research Methodologies
-In order to answer the questions posed based on our hypothesis, we are going to compare various socio-economic indicators before and after 1994, the year Apartheid officially abolished.
-
-  
 # References

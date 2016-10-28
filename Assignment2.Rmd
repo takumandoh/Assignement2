@@ -41,6 +41,17 @@ After the end of Apartheid, the unemploymentrate has been stagnated.(see @Last1)
 
 After the end of Apartheid, the life expectancy has been fallen.(see @Last1)
 
+## Research Methodologies
+In order to answer the questions posed based on our hypothesis, we are going to compare various socio-economic indicators before and after 1994, the year Apartheid officially abolished.
+
+We will investigate following indicators after the abolishment of apartheid.
+
+  1, racial imbalance in income distribution
+  
+  2, educational disparty
+  
+  3, crime rate
+
 
 ## Identify Data sources
 We will use following data sources to conduct our research
@@ -54,8 +65,5 @@ We will use following data sources to conduct our research
   4, US Census Bureau
 
 
-## Research Methodologies
-In order to answer the questions posed based on our hypothesis, we are going to compare various socio-economic indicators before and after 1994, the year Apartheid officially abolished.
 
-  
 # References

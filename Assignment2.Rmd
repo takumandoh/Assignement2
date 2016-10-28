@@ -27,7 +27,9 @@ This research is interesting because not only we deal with unique country, South
 
 #Literature Review 
 
-the abolishment of Apartheid has some positive and negative effect on the economy and society.
+1.How South Africa has changed since Nelson Mandela's release - the Guardian https://www.theguardian.com/world/datablog/2013/dec/06/how-south-africa-changed-since-nelson-mandelas-release-prison-1990
+ --> Overview: This is a Datablog article from The Guardian, which provides graphs related to Economic growth, Trade, Migration, Life expectancy, and Living conditions in South Africa over the last decades. The article also allows readers to directly access to the data so that readers can see the figures and share their views. According to the data provided by the article, GDP per capita has risen since the year of 1990, spending on healthcare has steadily improved from 2.9% in 1995 to 3.4% in 2005, and living conditions in terms of sanitation facilities has made improvements over the last decade. 
+
 
 After the end of Apartheid, the gdp per capita has been improved.
 ```{r}

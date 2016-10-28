@@ -52,7 +52,6 @@ We will investigate following indicators after the abolishment of apartheid.
   
   3, crime rate
 
-
 ## Identify Data sources
 We will use following data sources to conduct our research
 
@@ -63,7 +62,6 @@ We will use following data sources to conduct our research
   3, Statistics South Africa
 
   4, US Census Bureau
-
 
 
 # References

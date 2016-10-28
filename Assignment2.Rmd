@@ -39,7 +39,17 @@ This research is interesting because not only we deal with unique country, South
  
  4.	Poverty and Well-being in Post-Apartheid South Africa: An Overview of Data, Outcomes and Policy - Development Policy Research Unit (2005) https://papers.ssrn.com/sol3/papers.cfm?abstract_id=982805
  
---> Overview: This study provides an overview of poverty and well-being of South African during the first decade of post-apartheid. Focusing on the poverty and policy availability for future, this analysis paper argues that the first ten years after the end of Apartheid has rather displayed increase in income inequality and unemployment rates. The study also stated that the analysis observed the declining share of rural poverty due to increased migration and urbanization. 
+--> Overview: This study provides an overview of poverty and well-being of South African during the first decade of post-apartheid. Focusing on the poverty and policy availability for future, this analysis paper argues that the first ten years after the end of Apartheid has rather displayed increase in income inequality and unemployment rates. The study also stated that the analysis observed the declining share of rural poverty due to increased migration and urbanization.
+
+5.	Crime and local inequality in South Africa - Journal of Development Economics (December 2003) http://www.sciencedirect.com/science/article/pii/S0304387804001117
+
+-->	Overview: This research literature examines the effects of local inequality and violent crime in South Africa in the post-apartheid era with findings that inequality actually lead to crime in general. By using data on crime and estimates of welfare measured by all police precincts in South Africa, the study argues that while inequality between racial groups does not appear to be too important with respect to crime, racial heterogeneity is highly correlated with all types of crime. As a result, in order to reduce economic inequalities and help decrease property crime levels, it suggested to improve the distribution of income not only both within and between racial groups but also between neighborhoods within a local administration. 
+
+6.	Poverty and Inequality Dynamics in South Africa: Post-apartheid Developments in the Light of the Long-Run Legacy- Southern Africa Labour & Development Research Unit, University of Cape Town (January 2007) http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.605.3877&rep=rep1&type=pdf
+
+--> Overview: This research literature provides the evidence based on several data gathered, which shows a very high inequality society with a strong racial component to this inequality in South Africa in the post-Apartheid era. Arguing that the bottom half of the income distribution and poverty has been dominated by these black South Africans, the study concludes by suggesting the government to improve the education and health system and develop labor market behaviors.
+
+
 
 
 

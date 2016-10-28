@@ -27,17 +27,19 @@ gdp = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
 ggplot(gdp, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() +  xlab('Year') + ylab('GDP per capita')
 ```
 
-After the end of Apartheid, the unemploymentrate has been stagnated.@apartheidsucks
+After the end of Apartheid, the unemploymentrate has been stagnated.(see @Last1)
 
-After the end of Apartheid, the life expectancy has been fallen.@apartheidsucks
+After the end of Apartheid, the life expectancy has been fallen.(see @Last1)
 
 
 ##Methodlogy
 In order to answer the question, we compared various economic and social indicators before and after 1994, the year Apartheid officially abolished.
 
-##data sources
+##Data sources
 We will use following data sources.
   1, WorldBank
-  2, 
+  2, United Nations Development Programme
+  3, Statistics South Africa
+  4, US Census Bureau
   
 # References

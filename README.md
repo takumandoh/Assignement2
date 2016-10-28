@@ -7,11 +7,8 @@ After the abolishment of Apartheid, indicators has been significantly changed.
 
 #Methodlogy
 1, Gathering data
-  crimerate
-  level of education
-  level of income
 
-2, Compare the gaps of those indicators among races between the period of Apartheid and now.
+2, Compare the trend of those indicators during the period of Apartheid and now.
 
 #Discussion
 

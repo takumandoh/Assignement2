@@ -35,6 +35,10 @@ This research is interesting because not only we deal with unique country, South
 
  --> Overview: This research paper explores whether the legacy of apartheid in terms of inequality and human insecurity has been superseded by looking at the dynamics of post-apartheid income distribution based on the data from national household surveys. The analysis of this research paper argues that the end of apartheid has thus far at least proven to be only one kind of freedom because material well-being of significant numbers of South Africans has been headed downward and caught in a poverty trap. As a result, a large number of South Africans have been unable to take advantage of the liberalized post-apartheid environment. 
 
+3.	Income and Non-income Inequality in Post-Apartheid South Africa: What are the Drivers and Possible Policy Interventions? - Development Policy Research Unit, August 2009 http://www.cde.org.za/wp-content/uploads/2013/02/The%20Next%20Decade.pdf#page=95
+
+ --> Overview: This literature of study identifies the drivers of the reproduction of inequality in post-apartheid South Africa and examines possible policy choices in order to mitigate the impact of increased inequality. This paper argues, based on the analysis of data of Income and Expenditure surveys conducted in 1995, 2000, and 2005, that there had a continuous increase in inequality, strongly indicating that South African is now the one of the most consistently unequal economy in the world. We can use this literature to support our later argument that wage inequality among races can be the main contributor to the growing income inequality. 
+
 
 After the end of Apartheid, the gdp per capita has been improved.
 ```{r}

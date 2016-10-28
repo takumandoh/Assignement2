@@ -6,6 +6,9 @@ bibliography: bibliography.bib
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(WDI)
+library(ggplot2)
+
 ```
 ## Research Question 
 Our Research Question:
@@ -14,65 +17,25 @@ This research is interesting because not only we deal with unique country, South
   First of all, as a newly industrialized country, South Africa is now classified as an upper-middle-income economy where is now seen as one of the fastest growing economies from 2000 to 2013. Besides, its economy is the second-largest on the continent with a middle purchasing power parity, maintaining significant regional economic influence. Through making political and economic improvements since the polls in 1994, South Africa truly have gained international value and taken a growing role in the global economy as a trading partner. In terms of international political roles, South Africa has been playing a significant role as a conflict mediator over the last decade, especially in Burundi, the Democratic Republic of Congo, and Zimbabwe. Also, the country is a member of the G77, G20, G8+5, the South African Development Community, World Trade Organization, and International Monetary Fund. Likewise, at the macro-level, South Africa successfully scored global economic and political roles and gave a further impression of optimism for growth by attracting global firms and investment based on business-friendly environment and well-connected infrastructure, standing as a beacon for African development in the 21st century. Despite of such positive changes, however, South Africa is still suffering from a high rate of poverty and unemployment within its society. Moreover, a quarter of the population is living with less than US $1.25 per day and the country was ranked in the top 10 countries in the world for income inequality according to the Gini coefficient. Therefore, we believe that, in terms of political and economic context, it will be interesting to analyze the country to find out whether sound performances of the macro-economy have successfully translated into positive social changes and have overcome the apartheid legacy of racial segregation, poverty and inequality. Based on the findings, we can also come up with policy recommendations for the sake of creating a more equal and fair society and of increasing the governance capacity for mutual benefits within the global economic world.   
   Secondly, we believe that it is worth researching about the apartheid, analyzing its legacy, and any changes in post-apartheid, in terms of the historical and social context, since the policy itself was very controversial and unjust. Even before the official apartheid began, racial segregation and white supremacy was a central aspects of South African policy because of the 1913 Land Act, which forced black Africans to live in reserves. In 1948, South Africa's all-white government began enforcing policies of racial segregation with the system of apartheid. Under the rule of apartheid, nonwhite South Africans not only were forced to live in segregated neighborhoods from whites but also had to use separate restaurants, and other public facilities. Being at the very bottom of the social strata, black people were taken away of their citizenships, separated from public education, medical care, and all other public services. Moreover, they found jobs on white-owned mines, farms, or as servants for white households while being treated as inferiors. As a result, Apartheid sparked several significant internal resistance, uprisings, and protests organized by different kinds of sectors of local societies. One of the most popular internal resistance took place in 1976 in Soweto, a black township outside Johannesburg, when thousands of black children demonstrated against the Afrikaans language requirement for black African students. Since this uprising, South Africa's brutal apartheid policy drew more and more international attention to the country, and finally, the United Nations stepped up in the 1980s to end apartheid by utilizing economic sanctions and placing trading embargos against South African products. By the early 1990s, both internal and external efforts began to be effective as a series of negotiations started to dismantle apartheid. As both President of the Youth League and deputy ANC (African National Congress) President, Nelson Mandela was the one who intensified the grassroots resistance efforts despite of his multiple imprisonments. Apartheid officially ended in 1994 and Nelson Mandela became the first black and freely elected president of South Africa. During his presidency, Mandela established majority rule, guaranteed minority rights and freedom of expression, and devoted to improve employment, housing and basic public services including health care. 
 
-
 #Literature Review 
 
+the abolishment of Apartheid has some positive and negative effect on the economy and society.
 
-How we prove the assumption
-1, Gathering data
-  crimerate
-    crimerate of whites
-    crimerate of black
-  level of education
-    level of education of white people
-    level of education of black people
-  level of income
-    from wdi data
-2, Compare the gaps of those indicators among races between the period of Apartheid and now.
-
-What data we used in this research
-1, Crimerate in South Africa
-2, level of education
-3, level of income
-
-Conclusion
-Abolishing Apartheid was extremely effective to reduce social inequality!-I don't think so!!
-
-##data gathering
-We use following data sources
-  http://www.tradingeconomics.com/
-  http://data.worldbank.org/
-  
-We try to use WDI packages. First, we investigate indicator names by using following code.
-```{r}
-library(WDI)
-WDIsearch()
-WDIsearch('gdp.*capita.*constant')
-```
-
-
-
-what is the country code of South Africa? see iso2c codes
+After the end of Apartheid, the gdp per capita has been improved.
 ```{r}
 gdp = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
-trd = WDI(indicator='NE.TRD.GNFS.ZS', country=c('ZA'), start=1960, end=2012)
-
-```
-
-plot the gdp and trade
-```{r}
-library(ggplot2)
 ggplot(gdp, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() +  xlab('Year') + ylab('GDP per capita')
-ggplot(trd, aes(year, NE.TRD.GNFS.ZS, color=country)) + geom_line() +  xlab('Year') + ylab('Trade (% of gdp)')
 ```
 
-calculate the trade amount
-```{r}
-realtrd = gdp * trd
-ggplot(realtrd)
+After the end of Apartheid, the unemploymentrate has been stagnated.
 
-```
+After the end of Apartheid, the life expectancy has been fallen.
 
 
-We compare various indicator before and after 1994, the year Apartheid officially abolished.
+##Methodlogy
+In order to answer the question, we compared various economic and social indicators before and after 1994, the year Apartheid officially abolished.
 
+##data sources
+We will use following data sources.
+  1, WorldBank
+  2, 

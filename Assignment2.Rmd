@@ -49,6 +49,20 @@ This research is interesting because not only we deal with unique country, South
 
 --> Overview: This research literature provides the evidence based on several data gathered, which shows a very high inequality society with a strong racial component to this inequality in South Africa in the post-Apartheid era. Arguing that the bottom half of the income distribution and poverty has been dominated by these black South Africans, the study concludes by suggesting the government to improve the education and health system and develop labor market behaviors.@SAL
 
+
+
+
+
+After the end of Apartheid, the gdp per capita has been improved.
+```{r}
+gdp = WDI(indicator='NY.GDP.PCAP.KD', country=c('ZA'), start=1960, end=2012)
+ggplot(gdp, aes(year, NY.GDP.PCAP.KD, color=country)) + geom_line() +  xlab('Year') + ylab('GDP per capita')
+```
+
+After the end of Apartheid, the unemploymentrate has been stagnated.(see @Last1)
+
+After the end of Apartheid, the life expectancy has been fallen.(see @Last1)
+
 ## Research Methodologies
 In order to answer the questions posed based on our hypothesis, we are going to compare various socio-economic indicators before and after 1994, the year Apartheid officially abolished.
 

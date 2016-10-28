@@ -14,7 +14,7 @@ library(ggplot2)
 Twenty Years since the end of Apartheid: Did the collapse of Apartheid play a significant role in reducing racial and social inequality in South Africa? Is post-apartheid South Africa better off or worse off than during the apartheid era? 
 
 ## Hypothesis
-Since the end of apartheid and begnning of democracy in South Africa, socio-economic problems associated with white-supremacy, such as racial imbalance in income distribution, educational dispartiy, unemployment rate, and crime rate, has been improving, leading to successful transition and development of the country,   
+Since the end of apartheid and begnning of democracy in South Africa, socio-economic problems associated with white-supremacy, such as racial imbalance in income distribution, educational dispartiy, unemployment rate, and crime rate, has been improving, leading to successful transition and development of the country.
 
 ## Justification for the research 
 

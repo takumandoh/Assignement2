@@ -1,5 +1,5 @@
 ---
-title: "Assignment2"
+title: "Assignment 2"
 output: html_document
 bibliography: bibliography.bib
 ---
@@ -40,14 +40,17 @@ After the end of Apartheid, the unemploymentrate has been stagnated.(see @Last1)
 After the end of Apartheid, the life expectancy has been fallen.(see @Last1)
 
 
-##Methodlogy
-In order to answer the question, we compared various economic and social indicators before and after 1994, the year Apartheid officially abolished.
+## Identify Data sources
+We will use following data sources to conduct our research
 
-##Data sources
-We will use following data sources.
   1, WorldBank
   2, United Nations Development Programme
   3, Statistics South Africa
   4, US Census Bureau
+
+
+## Research Methodologies
+In order to answer the questions posed based on our hypothesis, we are going to compare various socio-economic indicators before and after 1994, the year Apartheid officially abolished.
+
   
 # References
